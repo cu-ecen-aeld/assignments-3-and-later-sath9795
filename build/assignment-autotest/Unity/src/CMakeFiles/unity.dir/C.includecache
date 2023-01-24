@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/Unity/src/unity.c
+unity.h
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/Unity/src/unity.h
+stddef.h
+-
+avr/pgmspace.h
+-
+
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/Unity/src/unity.h
+unity_internals.h
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/Unity/src/unity_internals.h
+
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/Unity/src/unity_internals.h
+unity_config.h
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/Unity/src/unity_config.h
+setjmp.h
+-
+math.h
+-
+stddef.h
+-
+stdarg.h
+-
+stdint.h
+-
+limits.h
+-
+stdio.h
+-
+stdio.h
+-
+time.h
+-
+time.h
+-
+

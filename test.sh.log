@@ -1,0 +1,600 @@
+Running test with user vboxuser
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:21:test_validate_my_username:FAIL: AESD students, please fix me!
+
+-----------------------
+1 Tests 1 Failures 0 Ignored 
+FAIL
+Unit test failed
+Executing assignment test script
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+./assignment-autotest/test/assignment1/assignment-test.sh: line 10: ./writer.sh: No such file or directory
+[0;31mValidation Error:writer.sh should have exited with return value 1 if no parameters were specified[0m
+./assignment-autotest/test/assignment1/assignment-test.sh: line 16: ./writer.sh: No such file or directory
+[0;31mValidation Error:writer.sh should have exited with return value 1 if write string is not specified[0m
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+./finder-test.sh: 57: ./writer.sh: not found
+[0;31mValidation Error:finder-test.sh execution for default directory failed with return code 127[0m
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/Uli1FKYuIqjDTvryLvPxUP1VZsV3N6Kn
+./finder-test.sh: 57: ./writer.sh: not found
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 127[0m
+Validation failed with error list :writer.sh should have exited with return value 1 if no parameters were specified:writer.sh should have exited with return value 1 if write string is not specified:finder-test.sh execution for default directory failed with return code 127:finder-test.sh execution for random directory failed with return code 127
+Test of assignment assignment1 failed with rc=1
+Running test with user vboxuser
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: expected 2 arguments!
+Error: expected 2 arguments!
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+touch: cannot touch '/tmp/aeld-data/sath97951.txt': No such file or directory
+./writer.sh: line 18: /tmp/aeld-data/sath97951.txt: No such file or directory
+Error: failed to write to file!
+[0;31mValidation Error:finder-test.sh execution for default directory failed with return code 1[0m
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/n7Fh2bdROlQZgP8G4HfAJH1iHaPuLsjq
+touch: cannot touch '/tmp/aeld-data/n7Fh2bdROlQZgP8G4HfAJH1iHaPuLsjq/sath97951.txt': No such file or directory
+./writer.sh: line 18: /tmp/aeld-data/n7Fh2bdROlQZgP8G4HfAJH1iHaPuLsjq/sath97951.txt: No such file or directory
+Error: failed to write to file!
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 1[0m
+Validation failed with error list :finder-test.sh execution for default directory failed with return code 1:finder-test.sh execution for random directory failed with return code 1
+Test of assignment assignment1 failed with rc=1
+Running test with user vboxuser
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: expected 2 arguments!
+Error: expected 2 arguments!
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+touch: cannot touch '/tmp/aeld-data/sath97951.txt': No such file or directory
+Error: failed to write to file!
+./writer.sh: line 18: /tmp/aeld-data/sath97951.txt: No such file or directory
+[0;31mValidation Error:finder-test.sh execution for default directory failed with return code 1[0m
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/MdGdHW2QLrR6rRcBXVv6PH4FclBUCrUP
+touch: cannot touch '/tmp/aeld-data/MdGdHW2QLrR6rRcBXVv6PH4FclBUCrUP/sath97951.txt': No such file or directory
+./writer.sh: line 18: /tmp/aeld-data/MdGdHW2QLrR6rRcBXVv6PH4FclBUCrUP/sath97951.txt: No such file or directory
+Error: failed to write to file!
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 1[0m
+Validation failed with error list :finder-test.sh execution for default directory failed with return code 1:finder-test.sh execution for random directory failed with return code 1
+Test of assignment assignment1 failed with rc=1
+Running test with user vboxuser
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: expected 2 arguments!
+Error: expected 2 arguments!
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+touch: cannot touch '/tmp/aeld-data/sath97951.txt': No such file or directory
+./writer.sh: line 18: /tmp/aeld-data/sath97951.txt: No such file or directory
+Error: failed to write to file!
+[0;31mValidation Error:finder-test.sh execution for default directory failed with return code 1[0m
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/vgAvBgCXMfvs3NLeBnobV3cdU5eG6tr7
+touch: cannot touch '/tmp/aeld-data/vgAvBgCXMfvs3NLeBnobV3cdU5eG6tr7/sath97951.txt': No such file or directory
+./writer.sh: line 18: /tmp/aeld-data/vgAvBgCXMfvs3NLeBnobV3cdU5eG6tr7/sath97951.txt: No such file or directory
+Error: failed to write to file!
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 1[0m
+Validation failed with error list :finder-test.sh execution for default directory failed with return code 1:finder-test.sh execution for random directory failed with return code 1
+Test of assignment assignment1 failed with rc=1
+Running test with user vboxuser
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 ~/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: expected 2 arguments!
+Error: expected 2 arguments!
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+touch: cannot touch '/tmp/aeld-data/sath97951.txt': No such file or directory
+./writer.sh: line 18: /tmp/aeld-data/sath97951.txt: No such file or directory
+Error: failed to write to file!
+[0;31mValidation Error:finder-test.sh execution for default directory failed with return code 1[0m
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/U1fLHDxDsnUKErwcJrgYfWeA1VN9v6LZ
+touch: cannot touch '/tmp/aeld-data/U1fLHDxDsnUKErwcJrgYfWeA1VN9v6LZ/sath97951.txt': No such file or directory
+./writer.sh: line 18: /tmp/aeld-data/U1fLHDxDsnUKErwcJrgYfWeA1VN9v6LZ/sath97951.txt: No such file or directory
+Error: failed to write to file!
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 1[0m
+Validation failed with error list :finder-test.sh execution for default directory failed with return code 1:finder-test.sh execution for random directory failed with return code 1
+Test of assignment assignment1 failed with rc=1
+Running test with user root
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: Not enough arguments specified. Usage: ./writer.sh <writefile> <writestr>
+Error: Not enough arguments specified. Usage: ./writer.sh <writefile> <writestr>
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+The number of files are 10 and the number of matching lines are 10
+success
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/s2CQ2DNgazEsQEnBeTUyQdgwlKbTPBzt
+./writer.sh: line 15: /tmp/aeld-data/s2CQ2DNgazEsQEnBeTUyQdgwlKbTPBzt/sath97951.txt: No such file or directory
+Error: Could not create file /tmp/aeld-data/s2CQ2DNgazEsQEnBeTUyQdgwlKbTPBzt/sath97951.txt.
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 1[0m
+Validation failed with error list :finder-test.sh execution for random directory failed with return code 1
+Test of assignment assignment1 failed with rc=1
+Running test with user root
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: Not enough arguments specified. Usage: ./writer.sh <writefile> <writestr>
+Error: Not enough arguments specified. Usage: ./writer.sh <writefile> <writestr>
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+The number of files are 10 and the number of matching lines are 10
+success
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/qTJqL10U9BftmS3UtF7XW3NEzRTexoMp
+./writer.sh: line 15: /tmp/aeld-data/qTJqL10U9BftmS3UtF7XW3NEzRTexoMp/sath97951.txt: No such file or directory
+Error: Could not create file /tmp/aeld-data/qTJqL10U9BftmS3UtF7XW3NEzRTexoMp/sath97951.txt.
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 1[0m
+Validation failed with error list :finder-test.sh execution for random directory failed with return code 1
+Test of assignment assignment1 failed with rc=1
+Running test with user root
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: two parameters required.
+Error: two parameters required.
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+./writer.sh: line 14: /tmp/aeld-data/sath97951.txt: No such file or directory
+Error: unable to create file /tmp/aeld-data/sath97951.txt
+[0;31mValidation Error:finder-test.sh execution for default directory failed with return code 1[0m
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/vgT1Hen5085bLu3L2EUq65G5tJLJNA6R
+./writer.sh: line 14: /tmp/aeld-data/vgT1Hen5085bLu3L2EUq65G5tJLJNA6R/sath97951.txt: No such file or directory
+Error: unable to create file /tmp/aeld-data/vgT1Hen5085bLu3L2EUq65G5tJLJNA6R/sath97951.txt
+[0;31mValidation Error:finder-test.sh execution for random directory failed with return code 1[0m
+Validation failed with error list :finder-test.sh execution for default directory failed with return code 1:finder-test.sh execution for random directory failed with return code 1
+Test of assignment assignment1 failed with rc=1
+Running test with user root
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: 2 arguments expected but 0 specified
+Error: 2 arguments expected but 1 specified
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+The number of files are 10 and the number of matching lines are 10
+success
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/honKxe7WcD2VMXUC4uNpx7x450mWJmfy
+The number of files are 10 and the number of matching lines are 10
+success
+Test of assignment assignment1 complete with success
+Running test with user root
+-- Generating ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c
+-- Building executable including ;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;../student-test/assignment1/Test_validate_username.c and ../examples/autotest-validate/autotest-validate.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/build
+[  8%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 16%] Linking C static library libunity.a
+[ 16%] Built target unity
+[ 25%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../student-test/assignment1/Test_validate_username_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c ../student-test/assignment1/Test_validate_username.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for ../student-test/assignment1/Test_validate_username.c
+Autogenerating test/unity_runner.c
+Scanning dependencies of target assignment-autotest
+[ 33%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 41%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 50%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username.c.o
+[ 58%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 66%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 75%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/student-test/assignment1/Test_validate_username_Runner.c.o
+[ 83%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 91%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Read sath9795 from conf/username.txt
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/../student-test/assignment1/Test_validate_username.c:15:test_validate_my_username:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+/home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/finder-app /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments/assignment-autotest/test/assignment1 /home/vboxuser/Desktop/Advanced_embedded/A1/assignment-1-sath9795/aesd-assignments
+Error: 2 arguments expected but 0 specified
+Error: 2 arguments expected but 1 specified
+Using default value AELD_IS_FUN for string to write
+Using default value 10 for number of files to write
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data
+The number of files are 10 and the number of matching lines are 10
+success
+Writing 10 files containing string AELD_IS_FUN to /tmp/aeld-data/z0dDj71Mh6AGduYOHW6F26K2dpBt1LVW
+The number of files are 10 and the number of matching lines are 10
+success
+Test of assignment assignment1 complete with success
