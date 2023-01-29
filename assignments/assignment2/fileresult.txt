@@ -1,0 +1,4 @@
+make: 'writer' is up to date.
+make: 'writer' is up to date.
+make: 'writer' is up to date.
+cc     writer.c   -o writer
