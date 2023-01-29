@@ -1,34 +1,44 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <syslog.h>
+#include <sys/syslog.h>
+#include <string.h>
 
-int main(int argc, char **argv) 
-{
-	if (argc != 3) 
-	{
-		//error if not enough arguments
-		syslog(LOG_ERR, "Error: incorrect number of arguments!");
-		exit(1);
+int main(int argc, char *argv[]) {
+	// open syslog
+	openlog("writer", LOG_PID|LOG_CONS, LOG_USER);
+
+	// check that there are the correct number of parameters
+	if (argc != 3) {
+		syslog(LOG_ERR, "Error: Invalid number of parameters.");
+		closelog();
+		return 1;
 	}
 
-	FILE *fp;
-	char *writeFile = argv[1];
-	char *writeString = argv[2];
-
-	fp = fopen(writeFile, "w");
-	if (fp == NULL) 
-	{
-		//error if file could not be created
-		syslog(LOG_ERR, "Error: could not create file!");
-		exit(1);
+	// check that the write string is specified
+	if (strlen(argv[2]) == 0) {
+		syslog(LOG_ERR, "Error: No write string specified.");
+		closelog();
+		return 1;
 	}
-	
-	fprintf(fp, "%s", writeString);
 
-	syslog(LOG_DEBUG, "Writing %s to %s", writeString, writeFile);
+	// open the file
+	FILE *fp = fopen(argv[1], "w");
+	if (fp == NULL) {
+		syslog(LOG_ERR, "Error: Unable to open file.");
+		closelog();
+		return 1;
+	}
 
+	// log the write statement
+	syslog(LOG_DEBUG, "Writing %s to %s.", argv[2], argv[1]);
+
+	// write the string
+	fputs(argv[2], fp);
+
+	// close the file
 	fclose(fp);
+
+	// close syslog
+	closelog();
 
 	return 0;
 }
-
