@@ -1,4 +1,4 @@
-make: 'writer' is up to date.
-make: 'writer' is up to date.
-make: 'writer' is up to date.
-cc     writer.c   -o writer
+rm -f writer *.o
+cc  -c -o writer.o writer.c
+cc  -o writer writer.o
+
