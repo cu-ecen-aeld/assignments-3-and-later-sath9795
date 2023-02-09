@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #Checking the number of parameters
 if [ "$#" -ne 2 ]; then 
