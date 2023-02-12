@@ -5,7 +5,8 @@ set -u
 NUMFILES=10
 WRITESTR=AELD_IS_FUN
 WRITEDIR=/tmp/aeld-data
-username=$(cat conf/username.txt)
+#username=$(cat conf/username.txt)
+username=$(cat /etc/finder-app/conf/username.txt)
 
 if [ $# -lt 2 ]
 then
@@ -47,8 +48,17 @@ do
 	./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
 done
 
-OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
+#OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
 
+
+
+OUTPUTSTRING=$(finder.sh "$WRITEDIR" "$WRITESTR") 		#removed ./ as it is added in path
+
+FINDEROP=/tmp/assignment4-result.txt
+
+echo ${OUTPUTSTRING} > ${FINDEROP}
+# remove temporary directories
+rm -rf /tmp/aeld-data
 set +e
 echo ${OUTPUTSTRING} | grep "${MATCHSTR}"
 if [ $? -eq 0 ]; then
