@@ -1,12 +1,31 @@
 #!/bin/sh
+# Tester script for assignment 1 and assignment 2
+# Author: Siddhant Jajoo
+
 set -e
 set -u
 
 NUMFILES=10
 WRITESTR=AELD_IS_FUN
 WRITEDIR=/tmp/aeld-data
-#username=$(cat conf/username.txt)
 username=$(cat /etc/finder-app/conf/username.txt)
+
+FINDER=$(which finder.sh)
+WRITER=$(which writer)
+
+
+# To check if 
+if [ -z $FINDER ]
+then
+	echo "finder.sh not found"
+	exit 1
+fi
+
+if [ -z $WRITER ]
+then
+	echo "writer not found"
+	exit 1
+fi
 
 if [ $# -lt 2 ]
 then
@@ -39,26 +58,19 @@ else
 	exit 1
 fi
 
-#echo "Removing the old writer utility and compiling as a native application"
+echo "Removing the old writer utility and compiling as a native application"
 #make clean
 #make
 
 for i in $( seq 1 $NUMFILES)
 do
-	./writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
+	writer "$WRITEDIR/${username}$i.txt" "$WRITESTR"
 done
 
-#OUTPUTSTRING=$(./finder.sh "$WRITEDIR" "$WRITESTR")
+OUTPUTSTRING=$(finder.sh "$WRITEDIR" "$WRITESTR")
 
+echo ${OUTPUTSTRING} > /tmp/assignment-4-result.txt
 
-
-OUTPUTSTRING=$(finder.sh "$WRITEDIR" "$WRITESTR") 		#removed ./ as it is added in path
-
-FINDEROP=/tmp/assignment4-result.txt
-
-echo ${OUTPUTSTRING} > ${FINDEROP}
-# remove temporary directories
-rm -rf /tmp/aeld-data
 set +e
 echo ${OUTPUTSTRING} | grep "${MATCHSTR}"
 if [ $? -eq 0 ]; then
